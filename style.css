@@ -1,0 +1,94 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Input & button styling */
+label, #tanggal {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #3c9d8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2b7a7d;
+}
+
+/* Output area */
+#output {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Canvas styling */
+canvas {
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+canvas:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    label, input[type="date"], button {
+        font-size: 1rem;
+        width: 90%;
+        margin: 10px auto;
+    }
+    #output {
+        font-size: 1rem;
+    }
+    canvas {
+        width: 90%;
+        height: auto;
+    }
+}
